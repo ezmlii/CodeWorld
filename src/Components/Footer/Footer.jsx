@@ -1,4 +1,4 @@
-import codeWorld from '../../assets/Images/codeworld-logo.svg';
+import codeWorld from '../../assets/images/codeworld-logo.svg';
 import linkedIn from '../../assets/icons/linkedIn.svg';
 import instagram from '../../assets/icons/instagram.svg';
 import facebook from '../../assets/icons/facebook.svg';
