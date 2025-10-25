@@ -1,7 +1,7 @@
 import EducationCard from './EducationCard';
 import arrow from '../../assets/icons/arrow.svg';
 
-const FeaturesSection = () => {
+const EducationSection = () => {
   const features = [
     {
       title: "Akademik Təqaüd",
@@ -43,4 +43,4 @@ const FeaturesSection = () => {
   );
 };
 
-export default FeaturesSection;
+export default EducationSection;

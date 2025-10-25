@@ -1,4 +1,3 @@
-import { PenTool, LayoutGrid, Monitor } from "lucide-react";
 import arrow from "../../assets/icons/arrow.svg";
 import graficDesign from "../../assets/icons/graficDesign.svg";
 import uxUi from "../../assets/icons/ux-ui.svg";
@@ -49,18 +48,39 @@ const CoursesSection = () => {
   ];
 
   return (
-    <section className="w-full flex items-center justify-center mt-[120px]">
-        <div className="w-[87%] flex flex-col items-center justify-center gap-2">
-          <h2 className="text-2xl font-semibold text-[#023047] mb-2 flex items-center gap-2 justify-center sm:justify-start w-full">
-            Kurslarımız <img src={arrow} alt="arrow" />
-          </h2>
+    <section className="w-full flex items-center justify-center mt-[60px]">
+      <div className="w-[87%] flex flex-col items-center justify-center">
+        
+        <h2 className="text-2xl font-semibold text-[#023047] mb-10 flex items-center gap-2 justify-center sm:justify-start w-full">
+          Kurslarımız <img src={arrow} alt="arrow" />
+        </h2>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-[23px] w-full justify-center sm:justify-start">
-            {courses.map((course, index) => (
-              <CourseCard key={index} {...course} />
-            ))}
+        <div className="w-full">
+          <div className="block md:hidden">
+            <div className="w-full rounded-xl">
+              <div className="grid grid-cols-1 gap-4 px-4">
+                {courses.map((course, index) => (
+                  <div key={index} className="flex justify-center">
+                    <CourseCard {...course} />
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="hidden md:block">
+            <div className="w-full rounded-xl" >
+              <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 px-6">
+                {courses.map((course, index) => (
+                  <div key={index} className="flex justify-center">
+                    <CourseCard {...course} />
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
+      </div>
     </section>
   );
 };

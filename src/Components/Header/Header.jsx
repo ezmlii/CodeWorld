@@ -6,7 +6,7 @@ const Header = () => {
       <img
         src={mainImage}
         alt="Main"
-        className="w-full h-[739px] object-cover object-center"
+        className="w-full h-[739px] sm:h-[1039px] lg:h-[835px] object-cover object-center"
       />
 
       <div className="absolute bottom-0 left-0 w-full h-[150px] bg-gradient-to-t from-white/80 to-transparent pointer-events-none"></div>
