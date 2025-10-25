@@ -1,4 +1,4 @@
-import codeWorldLogo from '../../assets/Images/codeworld-logo.svg';
+import codeWorld from '../../assets/Images/codeworld-logo.svg';
 import linkedIn from '../../assets/icons/linkedIn.svg';
 import instagram from '../../assets/icons/instagram.svg';
 import facebook from '../../assets/icons/facebook.svg';
@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="flex flex-col sm:flex-row sm:justify-between lg:flex-row lg:justify-between max-w-[306px] sm:max-w-[682px] lg:max-w-[1200px] mx-auto gap-[70px]">
         <div className="flex flex-col mb-8">
           <img 
-            src={codeWorldLogo} 
+            src={codeWorld} 
             alt="codeworld" 
             className="mb-4 filter brightness-0 invert w-[306px] h-[54px]"  
           />
